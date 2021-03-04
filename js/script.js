@@ -43,8 +43,28 @@ if(playerInput == '1'){
     playerMove = 'papier';
 } else if (playerInput == '3'){
     playerMove = 'nożyce';
-}else {
+} else {
     playerMove = 'Myślę, że chciałeś powiedzieć 1' + 'kamień';
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+// Zadanie: Wynik gry
+
+console.log(playerMove + computerMove);
+
+if(playerMove == 'papier' && computerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+} else if (playerMove == 'kamień' && computerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');
+} else if (playerMove == 'nożyce' && computerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+} else if (playerMove == computerMove){
+    printMessage('Remis!!');
+} else if (playerMove == 'nieznany ruch'){
+    printMessage('Przegrywasz');
+} else {
+    printMessage('Przegrywasz');
+}
+
+printMessage('Ja zagrałem: ' + computerMove + 'a Ty: ' + playerMove);
