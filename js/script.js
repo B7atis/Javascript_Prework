@@ -2,9 +2,9 @@
 
   /* Function */
   
-  function playGame(playerImput){
+  const playGame = function(playerImput){
     clearMessages();
-  function getMoveName(argMoveId){
+  const getMoveName = function(argMoveId){
   if(argMoveId == 1){
     return 'kamień';
   } else if(argMoveId == 2){
@@ -58,7 +58,7 @@
   
   /* Wynik gry */
   
-  function displayResult(argComputerMove, argPlayerMove){
+  const displayResult = function(argComputerMove, argPlayerMove){
     printMessage('Zagrałem ' + argComputerMove + ', a ty ' + argPlayerMove);
   if( argComputerMove == 'kamień' && argPlayerMove == 'papier') {
     printMessage('Ty Wygrywasz');
