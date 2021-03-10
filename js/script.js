@@ -4,7 +4,6 @@
   
   function playGame(playerImput){
     clearMessages();
-  
   function getMoveName(argMoveId){
   if(argMoveId == 1){
     return 'kamień';
