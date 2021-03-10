@@ -16,11 +16,11 @@
   
   /* Odczytywanie ruchów komputera */
   
-  const randomNumber = Math.floor(Math.random() * 3 + 1);
+  const randomNumber = Math.floor(Math.random() * 3 + 1),
+    computerMove = getMoveName(randomNumber),
+    playerMove = getMoveName(playerImput);
   
   console.log('Wylosowana liczba to: ' + randomNumber);
-  
-  const computerMove = getMoveName(randomNumber);
   
   /*
   if(randomNumber == 1){
@@ -40,7 +40,6 @@
   let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
   */
   
-  const playerMove = getMoveName(playerImput);
   
   /*
   if(playerInput == '1'){
