@@ -58,21 +58,21 @@
   /* Wynik gry */
   
   const displayResult = function(argComputerMove, argPlayerMove){
-    printMessage('Zagrałem ' + argComputerMove + ', a ty ' + argPlayerMove);
+    printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
   if( argComputerMove == 'kamień' && argPlayerMove == 'papier') {
-    printMessage('Ty Wygrywasz');
+    printMessage('Ty wygrywasz!');
   } else if( argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
-    printMessage('Ty Wygrywasz');
+    printMessage('Ty wygrywasz!');
   } else if( argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
-    printMessage('Ty Wygrywasz');
+    printMessage('Ty wygrywasz!');
   } else if( argComputerMove == 'kamień' && argPlayerMove == 'nożyce') {
-    printMessage('Przegrywasz');
+    printMessage('Przegrywasz!');
   } else if( argComputerMove == 'nożyce' && argPlayerMove == 'papier') {
-    printMessage('Przegrywasz');
+    printMessage('Przegrywasz!');
   } else if( argComputerMove == 'papier' && argPlayerMove == 'kamień') {
-    printMessage('Przegrywasz');
+    printMessage('Przegrywasz!');
   } else if(argComputerMove == argPlayerMove) {
-    printMessage('Remis');
+    printMessage('Remis!!');
   } else {
     printMessage('Przegrywasz');
   }}
