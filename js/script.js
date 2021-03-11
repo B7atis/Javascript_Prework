@@ -4,14 +4,14 @@
   
   const playGame = function(playerImput){
     clearMessages();
-  const getMoveName = function(argMoveId){
-  if(argMoveId == 1){
-    return 'kamień';
-  } else if(argMoveId == 2){
-    return 'papier';
-  } else if(argMoveId == 3){
-    return 'nożyce';
-  }
+    const getMoveName = function(argMoveId){
+    if(argMoveId == 1){
+      return 'kamień';
+    } else if(argMoveId == 2){
+      return 'papier';
+    } else if(argMoveId == 3){
+      return 'nożyce';
+    }
   }
   
   /* Odczytywanie ruchów komputera */
